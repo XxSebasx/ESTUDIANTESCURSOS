@@ -12,7 +12,6 @@ const EstudianteCurso = sequelize.define('EstudianteCurso', {
             model: Estudiante,
             key: 'ID'
         },
-        primaryKey: true
     },
     IDCurso: {
         type: DataTypes.INTEGER,
@@ -20,7 +19,6 @@ const EstudianteCurso = sequelize.define('EstudianteCurso', {
             model: Curso,
             key: 'ID'
         },
-        primaryKey: true
     }
 }, {
     tableName: "EstudianteCurso",

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estudiantes</h1>
+    <form id="formEstudiante">
+        <input placeholder="nombre" id="nombre">
+        <input placeholder="email" id="email">
+        <input placeholder="edad" id="edad">
+        <button type="submit"></button>
+    </form>
+
+    <h3>operaciones estudiantes</h3>
+    <input placeholder="id" id="idEstudiante">
+    <button id="getEstudiante">Ver Estudiante</button>
+    <button id="deleteEstudiante">Eliminar Estudiante</button>
+    <br>
+    <input placeholder="edad" id="age">
+    <button id="getEdad">Ver mallores a una edad</button>
+
+    <h3>Tabla Estudiantes</h3>
+    <table border="1px">
+        <thead>
+            <th>ID</th>
+            <th>nombre</th>
+            <th>email</th>
+            <th>edad</th>
+        </thead>
+        <tbody id="tablaEstudiantes"></tbody>
+    </table>
+
+
+    <h1>Cursos</h1>
+    <form id="formCurso">
+        <input placeholder="titulo" id="titulo">
+        <input placeholder="descripcion" id="descripcion">
+        <input placeholder="duracion" id="duracion">
+        <button type="submit">add</button>
+    </form>
+
+    <h3>operaciones cursos</h3>
+    <input placeholder="id" id="idCurso">
+    <button id="getCurso">Ver curso</button>
+    <button id="deleteCurso">Eliminar curso</button>
+    <br>
+    <input placeholder="edad" id="idEC">
+    <button>Ver los cursos de estudiantes</button>
+
+
+    <h3>Tabla Cursos</h3>
+    <table border="1px">
+        <thead>
+            <th>ID</th>
+            <th>titulo</th>
+            <th>descripcion</th>
+            <th>duracion</th>
+        </thead>
+        <tbody id="tablaCursos"></tbody>
+    </table>
+
+    <h1>Estudiante-curso</h1>
+    <form id="formEC">
+        <input placeholder="studentID" id="studentID">
+        <input placeholder="courseID" id="courseID">
+        <button type="submit">add</button>
+    </form>
+
+    <h3>Operaciones cursos</h3>
+    <input placeholder="studentID" id="deleteStudentID">
+    <input placeholder="courseID" id="deleteCourseID">
+    <button id="deleteInscripcion">Eliminar inscripcion</button>
+    <br>
+    <button id="getRanking">ranking</button>
+
+    <h3>Tabla Estudiante-curso</h3>
+    <table>
+        <thead>
+            <th>studentID</th>
+            <th>courseID</th>
+        </thead>
+        <tbody id="tablaEstudiante-curso"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

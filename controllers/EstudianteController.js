@@ -1,4 +1,4 @@
-const Curso = require("../models/Curso");
+
 const Estudiante = require("../models/Curso");
 const { Op } = require("sequelize");
 
@@ -40,6 +40,8 @@ module.exports = {
         })
         res.json(estudiante)
     },
+
+    
 
 
 }
